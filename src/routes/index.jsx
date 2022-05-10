@@ -10,10 +10,22 @@ export default function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/" element={<Layout />}>
-          <Route path="/todos" element={<Todos />} />
-          <Route path="/users" element={<Users />} />
-        </Route>
+        <Route
+          path="/todos"
+          element={
+            <Layout>
+              <Todos />
+            </Layout>
+          }
+        />
+        <Route
+          path="/users"
+          element={
+            <Layout>
+              <Users />
+            </Layout>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

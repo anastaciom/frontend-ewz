@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderStyle, BoxTitleStyle, BoxNavigationStyle } from "./style";
-
+import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <HeaderStyle>
@@ -9,8 +9,8 @@ export default function Header() {
       </BoxTitleStyle>
 
       <BoxNavigationStyle>
-        <a href="http://">Todos</a>
-        <a href="http://">Usuários</a>
+        <Link to="/todos">Todos</Link>
+        <Link to="/users">Usuários</Link>
       </BoxNavigationStyle>
     </HeaderStyle>
   );

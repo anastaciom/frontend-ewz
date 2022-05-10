@@ -8,6 +8,9 @@ export const HeaderStyle = styled.header`
   background-color: #1A1A1A;
   padding-left: 30px;
   padding-right: 30px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
 `;
 
 export const BoxTitleStyle = styled.div`
