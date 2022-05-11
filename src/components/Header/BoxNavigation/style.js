@@ -27,7 +27,7 @@ export const BoxNavigationStyle = styled.div`
       color: #fff;
     }
   }
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     a {
     font-size: 16px;
   }

@@ -11,7 +11,7 @@ export const HeaderStyle = styled.header`
   position: fixed;
   z-index: 999;
   top: 0;
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     padding-left: 100px;
   }
   @media screen and (max-width: 660px) {

@@ -31,7 +31,7 @@ export const UserCardStyle = styled.div`
       transform: scale(0.85);
     }
   }
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     width: 360px;
     height: 400px;
     gap: 25px;
@@ -39,12 +39,7 @@ export const UserCardStyle = styled.div`
       font-size: 16px;
     }
     button {
-      background-color: #3d6cb9;
-      outline: none;
-      border: none;
-      width: 80%;
       height: 38px;
-      border-radius: 5px;
       font-size: 16px;
     }
   }
@@ -103,7 +98,7 @@ export const UserAvatarStyle = styled.div`
     }
   }
 
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     height: 25%;
     span {
       width: 50px;

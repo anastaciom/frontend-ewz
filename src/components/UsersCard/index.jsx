@@ -18,19 +18,19 @@ export default function UsersCard({
         </div>
       </UserAvatarStyle>
       <p>
-        <strong>E-mail:</strong>
+        <strong>E-mail: </strong>
         {email}
       </p>
       <p>
-        <strong>Telefone:</strong>
+        <strong>Telefone: </strong>
         {phone}
       </p>
       <p>
-        <strong>Rua:</strong>
+        <strong>Rua: </strong>
         {street}
       </p>
       <p>
-        <strong>Cidade:</strong>
+        <strong>Cidade: </strong>
         {city}
       </p>
       <button>Ver mais</button>

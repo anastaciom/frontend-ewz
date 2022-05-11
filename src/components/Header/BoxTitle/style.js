@@ -10,7 +10,7 @@ export const BoxTitleStyle = styled.div`
     font-weight: 500;
     color: #fff;
   }
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     h1 {
     font-size: 20px;
   }

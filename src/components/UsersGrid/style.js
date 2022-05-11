@@ -8,7 +8,7 @@ export const UsersGridStyle = styled.div`
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto;
   
-  @media (min-width: 1600px) and (max-width: 1920px){
+  @media screen and (width: 1920px){
     width: 95%;
     row-gap: 35px;
 }

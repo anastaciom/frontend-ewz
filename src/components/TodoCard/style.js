@@ -22,7 +22,7 @@ export const TodosCardStyle = styled.div`
     background-color: ${(props) => (props.isCompleted ? "#17B978" : "#3D6CB9")};
   }
 
-  @media (min-width: 1600px) and (max-width: 1920px) {
+  @media screen and (width: 1920px) {
     width: 400px;
     height: 140px;
     justify-content: space-evenly;
