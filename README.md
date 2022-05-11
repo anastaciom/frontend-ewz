@@ -2,7 +2,7 @@
 
 ###  Responsive frontend application, developed with ReactJs and Styled-Components, which consumes an API with user data.
 
-### - Deploy link: .....
+### - Deploy link: https://frontend-ewz.netlify.app
 ---
 ### Preview: 
 
