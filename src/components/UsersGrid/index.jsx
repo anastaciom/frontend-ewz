@@ -1,16 +1,7 @@
-import React, { useState, useEffect } from "react";
-import api from "../../services/api";
+import React from "react";
 import UsersCard from "../UsersCard";
 import { UsersGridStyle } from "./style";
-export default function UsersGrid() {
-  const [usersData, setUsersData] = useState([]);
-
-  useEffect(() => {
-    api.get("users").then(({ data }) => {
-      setUsersData(data);
-    });
-  }, []);
-
+export default function UsersGrid({usersData}) {
   return (
     <UsersGridStyle>
       {usersData.map((data) => (
