@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react";
-import TodosCard from "../../components/TodosCard";
-import api from "../../services/api";
+import React from "react";
+import TodoGrid from "../../components/TodoGrid";
+import { DashboardTodosStyle} from "./style";
 
 export default function TodosPage() {
-  const [apiData, setApiData] = useState([]);
-
-  useEffect(() => {
-    api
-      .get("todos")
-      .then(({ data }) => {
-        const reduceData = data.slice(0, 15);
-        setApiData(reduceData);
-      })
-  }, []);
 
   return (
-    <div>
-      {apiData.map((data) => (
-        <TodosCard
-          key={data.id}
-          isCompleted={data.completed}
-          title={data.title}
-          userID={data.userId}
-        />
-      ))}
-    </div>
+    <DashboardTodosStyle>
+      <h1>Todos os todos</h1>
+     <TodoGrid/>
+    </DashboardTodosStyle>
   );
 }

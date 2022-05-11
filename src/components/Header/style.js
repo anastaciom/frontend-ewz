@@ -5,26 +5,10 @@ export const HeaderStyle = styled.header`
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   padding-left: 30px;
   padding-right: 30px;
   position: fixed;
   z-index: 999;
   top: 0;
-`;
-
-export const BoxTitleStyle = styled.div`
-height:inherit;
-display:flex;
-align-items:center;
-flex: 3;
-`;
-
-export const BoxNavigationStyle = styled.div`
-display:flex;
-height:inherit;
-align-items:center;
-flex: 1;
-justify-content: center;
-gap: 30px
 `;

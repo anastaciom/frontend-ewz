@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
+import {TodosCardStyle} from './style'
 export default function TodosCard({ title, isCompleted, userID }) {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -11,10 +12,10 @@ export default function TodosCard({ title, isCompleted, userID }) {
   }, [userID]);
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <h2>{isCompleted}</h2>
-      <h3>{userName}</h3>
-    </div>
+    <TodosCardStyle isCompleted={isCompleted}>
+      <span/>
+      <p><strong>Título:</strong> {title}</p>
+      <p><strong>Responsável:</strong> {userName}</p>
+    </TodosCardStyle>
   );
 }

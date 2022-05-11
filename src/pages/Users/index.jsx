@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from "react";
-import api from "../../services/api";
+import React from "react";
+import UsersGrid from "../../components/UsersGrid";
+import { DashboardUsersStyle} from "./style";
 export default function UsersPage() {
-  const [usersData, setUsersData] = useState([]);
 
-  useEffect(() => {
-    api.get("users").then(({ data }) => {
-      setUsersData(data);
-    });
-  }, []);
   return (
-    <div>
-      {usersData.map((data) => (
-        <div key={data.id}>{data.username}</div>
-      ))}
-    </div>
+    <DashboardUsersStyle>
+      <h1>Usuários</h1>
+      <UsersGrid/>
+    </DashboardUsersStyle>
   );
 }
