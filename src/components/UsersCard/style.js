@@ -31,6 +31,45 @@ export const UserCardStyle = styled.div`
       transform: scale(0.85);
     }
   }
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    width: 360px;
+    height: 400px;
+    gap: 25px;
+    p {
+      font-size: 16px;
+    }
+    button {
+      background-color: #3d6cb9;
+      outline: none;
+      border: none;
+      width: 80%;
+      height: 38px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    width: 100%;
+    button {
+      width: 85%;
+      height: 32px;
+    }
+  }
+
+  @media (min-width: 660px) and (max-width: 800px) {
+    width:90%;
+  }
+
+  @media (min-width: 800px) and (max-width: 1024px) {
+    width: 90%;
+    p {
+    font-size: 13px;
+  }
+  button {
+    height: 35px;
+    font-size: 15px;
+  }
+  }
 `;
 
 export const UserAvatarStyle = styled.div`
@@ -61,6 +100,33 @@ export const UserAvatarStyle = styled.div`
     h2 {
       font-size: 14px;
       font-weight: 500;
+    }
+  }
+
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    height: 25%;
+    span {
+      width: 50px;
+      height: 50px;
+    }
+    div {
+      gap: 10px;
+      h1 {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+  @media screen and (max-width: 660px) {
+    gap: 20px;
+    span {
+      width: 45px;
+      height: 45px;
+    }
+    div {
+      gap: 9px;
     }
   }
 `;
